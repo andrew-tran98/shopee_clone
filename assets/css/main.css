@@ -235,18 +235,69 @@
     display: flex;
     flex-direction: column;
 }
-.modal__inner__header{
+.modal__inner-header{
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
 }
-.modal__inner__header-title{
+.modal__inner-header-title{
     font-size: 2rem;
     font-weight: 300;
     margin: 0;
-    /* height: ; */
+    flex: 2.5;
+}
+
+.modal__inner-header-qr{
+    border: 2px solid #FFBF00 /*rgb(255,191,0)*/;
+    border-radius: 2px;
+    flex: 3.5;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFBF00;
+    background-color: #FEFAEC; /*rgb(254,250,236)*/
+    height: 56px;
+    line-height: 2px;
+    padding-left: 25px;
+    padding-right: 20px;
+    margin-left: 15px;
+    margin-right: 18px;
+    position: relative;
+}
+.modal__inner-header-qr::after{
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 9px 9px;
+    right: -20px;
+    top: 15px;
+    border-color: transparent transparent transparent #FFBF00;
+    background-color: #fff;
+}
+
+.modal__inner-header-qr-img{
+    padding-right: 0;
+    flex: 1;
+    padding: 0;
+}
+.modal__inner-header-qr-logo{
+    height: 40px;
+    width: 40px;
 }
 .auth-form__body{
     align-items: center;
     margin-bottom: 37px;
+}
+
+.auth-form__body-method{
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth-form__body-item{
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 10px 0 0;
+    color: #0055AA; /*rgb(0,85,170)*/
 }
 .auth-form__input{
     height: 40px;
@@ -310,6 +361,13 @@
     right: 75px;
     bottom: 0;
 }
+
+.modal__inner-footer-login{
+    font-size: 1.5rem;
+    position: absolute;
+    right: 60px;
+    bottom: -10px;
+}
 .auth-form__info{
     font-size: 1.3rem;
     text-align: center;
@@ -325,7 +383,29 @@
     margin-top: 26px;
     margin-bottom: 30px;
 }
-
+.auth-form__social-link-login{
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+    margin-bottom: 20px;
+}
+.auth-form__social-link-login-item{
+    height: 100%;
+    width: 120px;
+    text-align: center;
+    font-size: 1.4rem;
+    border: 1px solid black;
+    display: flex;
+    padding: 9px 20px 9px 15px;
+    text-decoration: none;
+    color: #000000;
+    border-color: rgba(0,0,0,0.2);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .auth-form__social-link-item{
     height: 100%;
     width: 180px;
@@ -361,7 +441,14 @@
     padding-top: 8px;
     opacity: .5;
 }
-
+.auth-form__separator-login{
+    display: flex; 
+    justify-content: space-between; 
+    padding-top: 0;
+    opacity: .5;
+    margin-top: -25px;
+    margin-bottom: -10px;
+}
 .auth-form__separator-item{
     flex: 2;
 }
