@@ -61,11 +61,19 @@ html{
 }
 
 .modal__body{
-    width: 396px;
-    height: 485px;
+    width: 434px;
+    height: 470px;
     background-color: var(--white-color);
     border-radius: 5px;
     margin: auto;
     position: relative;
     z-index: 1;
+    padding: 30px 30px 30px 30px;
+}
+
+.modal__inner{
+    width:100%;
+    height: 100%;
+    position: relative;
+    
 }

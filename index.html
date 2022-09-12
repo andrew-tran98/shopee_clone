@@ -125,20 +125,44 @@
         <div class="modal">
             <div class="modal__body">
                 <div class="modal__inner">
+                    <!-- Header -->
+                    <div class="modal__inner__header">
+                        <h3 class="modal__inner__header-title">Đăng ký</h3>
+                    </div>
                     <!-- Authentication form -->
                     <div class="auth-form">
-                        <div class="auth-form__header">
-                            <h3 class="auth-form__header">Đăng ký</h3>
-                        </div>
                         <div class="auth-form__body">
                             <div class="auth-form__group">
-                                <input class="auth-form__input" type="text" id="phone-number" placeholder="Số điện thoại">
+                                <input class="auth-form__input" type="number" id="phone-number" placeholder="Số điện thoại">
+                                <button class="auth-form__btn">TIẾP THEO</button>
                             </div>
                         </div>
-                        <hr>
-                        <footer class="auth-form__footer">
-                            footer
-                        </footer>
+                        <div class="auth-form__separator">
+                            <hr class="auth-form__separator-item">
+                            <span class="auth-form__separator-text">HOẶC</span>
+                            <hr class="auth-form__separator-item">
+                        </div>
+                        <div class="auth-form__social-link">
+                            <a href="" class="auth-form__social-link-item">
+                                <span><img class="auth-form__social-link-img" src="./assets/img/fb_icon.png" alt="Facebook"></span>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="" class="auth-form__social-link-item">
+                                <span><img class="auth-form__social-link-img" src="./assets/img/gg_icon.png" alt="Facebook"></span>
+                                <span>Google</span>
+                            </a>
+                        </div>
+                        <div class="auth-form__info">
+                            <div>Bằng việc đăng ký, bạn đã đồng ý với Shopee về</div>
+                            <span><a href="" class="auth-form__info-link">Điều khoản dịch vụ</a></span>
+                            <span>&</span>
+                            <span><a href="" class="auth-form__info-link">Chính sách bảo mật</a></span>
+                        </div>
+                    </div>
+                    <!-- Footer -->
+                    <div class="modal__inner-footer">
+                        <span class="modal__inner-footer-question">Bạn đã có tài khoản?</span>
+                        <span><a href="" class="modal__inner-footer-link">Đăng nhập</a></span>
                     </div>
                 </div>
             </div>
